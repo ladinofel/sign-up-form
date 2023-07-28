@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+}
+
+.left-content {
+  display: flex;  
+  flex-basis: 40%;
+  height: 100vh;
+}
+
+.right-content {
+  display: flex;  
+  flex-direction: column;
+  flex-basis: 60%;
+  background-color: #ebb551;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight:600;
+}
+
+img { 
+  display: flex;  
+  width: auto;
+  height: 65vh;  
+  align-self: center;  
+}
+
+.right-header {
+  text-align: left;
+  margin-top: 50px;
+  padding: 30px;
+}
