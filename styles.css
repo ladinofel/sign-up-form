@@ -22,6 +22,8 @@ body {
   color: white;
   font-size: 20px;
   font-weight:600;
+  border-bottom-left-radius:9%;
+  border-top-left-radius:9%;
 }
 
 img { 
@@ -47,9 +49,13 @@ float:right;
 margin-right: 200px;
 width: 35%;
 margin-bottom: 15px;
+background-color: #eef4ed;
+border: none;
+border-radius: 5px;
+height: 22px;
 }
 
-.footer {
+.submit {
   display: flex;
   justify-content:flex-start;
 }
@@ -73,7 +79,49 @@ button:hover {
 .phone-number,
 .pwd_1,
 .pwd_2 {
-  margin-bottom: 20px;
-  
+  margin-bottom: 20px;  
+}
+
+#form-restrictions {
+  margin-left: 30px;
+  font-size: small;
+  font-weight:600;
+}
+
+input:focus {
+  background-color: #c0e9f3;
+}
+
+#user-pwd-1 + span,
+#user-pwd-2 + span {
+  position: relative;
+}
+
+#user-pwd-1 + span::before,
+#user-pwd-2 + span::before {
+  font-size: 15px;
+  position: absolute;
+  padding: 5px 10px;  
+}
+
+
+#user-pwd-1:focus + span::before {
+  color: white;
+  background-color: rgb(40, 65, 192);
+  width: 350px;
+  top: 27px;
+  left: 141px;
+  border-radius: 3px;
+  content: "Include UPPERCASE, lowercase, numbers, special symbols, and min 8 characters."
+}
+
+#user-pwd-2:focus + span::before {
+  color: white;
+  background-color: rgb(40, 65, 192);
+  width: 350px;
+  top: 27px;
+  left: 23px;
+  border-radius: 3px;
+  content: "Include UPPERCASE, lowercase, numbers, special symbols, and min 8 characters."
 }
 
