@@ -21,7 +21,7 @@
       </div>
       <div class="form-container">
         <p id="form-restrictions">All fields with an * are required.</p>
-        <form action="" method="get">
+        <form id="myForm" method="get">
           <div class="first-name">
             <label for="first-name">First name:</label>
             <input class= "first-name" type="text" id="first-name" name="first-name">
@@ -40,20 +40,21 @@
           </div>
           <div class="pwd_1">
             <label for="user-pwd">Password* :</label>
-            <input type="password" id="user-pwd-1" name="user-pwd-1" required>
+            <input type="password" id="user-pwd-1" name="user-pwd-1" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
             <span></span>
           </div>
             <div class="pwd_2">
             <label for="user-pwd">Confirm your password* :</label>
-            <input type="password" id="user-pwd-2" name="user-pwd-2" required>
-            <span></span>
+            <input type="password" id="user-pwd-2" name="user-pwd-2" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+            <span id="confirmPassword-feedback"></span>
           </div>
           <div class="submit">
-            <button type="submit">Sign up</button>
+            <button type="submit">Sign Up</button>
           </div>
         </form>  
       </div>        
     </div>
   </div>    
 </body>
+<script src="./script.js"></script>
 </html>

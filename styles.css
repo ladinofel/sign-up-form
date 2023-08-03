@@ -92,13 +92,11 @@ input:focus {
   background-color: #c0e9f3;
 }
 
-#user-pwd-1 + span,
-#user-pwd-2 + span {
+#user-pwd-1 + span {
   position: relative;
 }
 
-#user-pwd-1 + span::before,
-#user-pwd-2 + span::before {
+#user-pwd-1 + span::before {
   font-size: 15px;
   position: absolute;
   padding: 5px 10px;  
@@ -115,13 +113,12 @@ input:focus {
   content: "Include UPPERCASE, lowercase, numbers, special symbols, and min 8 characters."
 }
 
-#user-pwd-2:focus + span::before {
-  color: white;
-  background-color: rgb(40, 65, 192);
-  width: 350px;
-  top: 27px;
-  left: 23px;
-  border-radius: 3px;
-  content: "Include UPPERCASE, lowercase, numbers, special symbols, and min 8 characters."
+
+#confirmPassword-feedback {
+  color: red;
+  font-size: 15px;
+  position: absolute; 
+  margin-top: 30px; 
+  margin-left: 25px;
 }
 
