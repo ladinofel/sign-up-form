@@ -104,7 +104,9 @@ input {
 
 input:focus {
   background-color: #c0e9f3;
+  outline: none;
 }
+
 
 #user-pwd-1 + span {
   position: relative;
@@ -121,10 +123,33 @@ input:focus {
   color: white;
   background-color: rgb(40, 65, 192);
   width: 350px;
-  top: 27px;
+  top: 29px;
   left: 141px;
   border-radius: 3px;
-  content: "Include UPPERCASE, lowercase, numbers, special symbols, and min 8 characters."
+  content: "Include UPPERCASE, lowercase, numbers / special symbols, and min 8 characters."
+}
+
+#email + span {
+  position: relative;
+}
+
+#email + span::before {
+  font-size: 15px;
+  position: absolute;
+  padding: 5px 10px;  
+}
+
+
+#email:focus:invalid + span::before {
+  color: white;
+  background-color: rgb(40, 65, 192);
+  font-size: small;
+  width: 153px;
+  height: 16px;
+  top: 0px;
+  left: 450px;
+  border-radius: 3px;
+  content: "Enter a valid email address"
 }
 
 
@@ -146,4 +171,38 @@ input:focus {
   font-weight: bolder;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#user-pwd-1:focus:invalid {
+  background-color: rgb(191, 155, 155);
+  border: 1px solid red;
+}
+
+#user-pwd-2:focus:invalid {
+  background-color: rgb(191, 155, 155);
+  border: 1px solid red;
+}
+
+#user-pwd-1:focus:valid {
+  border: 1px solid green;
+  background-color: rgb(150, 196, 150);
+}
+
+#user-pwd-2:focus:valid {
+  border: 1px solid green;
+  background-color: rgb(150, 196, 150);
+}
+
+#email:focus:invalid {
+  background-color: rgb(191, 155, 155);
+  border: 1px solid red;
+}
+
+#email:focus:valid {
+  border: 1px solid green;
+  background-color: rgb(150, 196, 150);
+}
+
+#email {
+  background-color: none;
 }
