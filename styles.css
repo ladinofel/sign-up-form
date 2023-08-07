@@ -95,7 +95,6 @@ button:active {
 #form-restrictions {
   margin-left: 30px;
   font-size: small;
-  font-weight:600;
 }
 
 input {
@@ -107,7 +106,6 @@ input:focus {
   outline: none;
 }
 
-
 #user-pwd-1 + span {
   position: relative;
 }
@@ -117,7 +115,6 @@ input:focus {
   position: absolute;
   padding: 5px 10px;  
 }
-
 
 #user-pwd-1:focus + span::before {
   color: white;
@@ -139,7 +136,6 @@ input:focus {
   padding: 5px 10px;  
 }
 
-
 #email:focus:invalid + span::before {
   color: white;
   background-color: rgb(40, 65, 192);
@@ -151,7 +147,6 @@ input:focus {
   border-radius: 3px;
   content: "Enter a valid email address"
 }
-
 
 #confirmPassword-feedback {
   color: red;
@@ -173,21 +168,13 @@ input:focus {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#user-pwd-1:focus:invalid {
-  background-color: rgb(191, 155, 155);
-  border: 1px solid red;
-}
-
+#user-pwd-1:focus:invalid,
 #user-pwd-2:focus:invalid {
   background-color: rgb(191, 155, 155);
   border: 1px solid red;
 }
 
-#user-pwd-1:focus:valid {
-  border: 1px solid green;
-  background-color: rgb(150, 196, 150);
-}
-
+#user-pwd-1:focus:valid,
 #user-pwd-2:focus:valid {
   border: 1px solid green;
   background-color: rgb(150, 196, 150);
@@ -205,4 +192,15 @@ input:focus {
 
 #email {
   background-color: none;
+}
+
+#footer {
+  display: flex;
+  margin-left: 30px;
+  font-size: medium ;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
 }
