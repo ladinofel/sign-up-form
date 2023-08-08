@@ -153,7 +153,7 @@ input:focus {
   font-size: 15px;
   position: absolute; 
   margin-top: 30px; 
-  margin-left: 25px;
+  margin-left: 68px;
 }
 
 #title {
@@ -204,3 +204,65 @@ a {
   color: blue;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  img {
+    display: flex;
+    width: 38vh;
+    height: auto;
+    align-self: center;
+  }
+
+  .right-content {
+    border-radius: 0;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .right-header {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  label {
+    margin-left: 0;
+  }
+  input {
+    padding: 0;
+    margin-left:10px;
+    margin-right: 0px;
+    width: 40%;
+    margin-bottom: 0px;
+    background-color: #eef4ed;
+    border: none;
+    border-radius: 5px;
+    height: 22px;
+    }
+
+  #myForm {
+    margin-left: -30px;
+  }
+
+  .submit {
+    display: flex;
+    justify-content:center;
+  }
+  
+  button {
+    margin: 30px 0 0 30px;
+    font-size: large;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1%;
+    width: 35%;
+    justify-content: center;  
+    transition-duration: 0.4s;
+  }
+} 
