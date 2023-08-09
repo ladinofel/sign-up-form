@@ -275,12 +275,17 @@ a {
     flex-direction: column;
     align-items: center;
   }
-  
+  .img {
+    display: flex;
+    align-self: center;
+  }
+
   img {
     display: flex;
     width: 38vh;
     height: auto;
     align-self: center;
+    margin: 0;
   }
 
   .right-content {
@@ -310,7 +315,7 @@ a {
     }
 
   #myForm {
-    margin-left: -30px;
+    margin-left: -10px;
   }
 
   .submit {
@@ -327,5 +332,17 @@ a {
     width: 35%;
     justify-content: center;  
     transition-duration: 0.4s;
+  }
+
+  #title {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    margin-bottom: 6%;
+    color: white;
+    background-color: #82d2b5;
+    font-weight: bolder;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 } 
