@@ -268,7 +268,7 @@ a {
 } 
 
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 380px) {
 
   .main-container {
     display: flex;
