@@ -271,20 +271,18 @@ a {
 @media screen and (max-width: 380px) {
 
   .main-container {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
+  
   .img {
     display: flex;
     align-self: center;
   }
 
   img {
-    display: flex;
     width: 38vh;
     height: auto;
-    align-self: center;
     margin: 0;
   }
 
@@ -302,20 +300,17 @@ a {
   label {
     margin-left: 0;
   }
+
   input {
     padding: 0;
     margin-left:10px;
     margin-right: 0px;
     width: 40%;
     margin-bottom: 0px;
-    background-color: #eef4ed;
-    border: none;
-    border-radius: 5px;
-    height: 22px;
-    }
+  }
 
   #myForm {
-    margin-left: -10px;
+    margin-left: 0px;
   }
 
   .submit {
@@ -324,25 +319,28 @@ a {
   }
   
   button {
-    margin: 30px 0 0 30px;
-    font-size: large;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 1%;
     width: 35%;
-    justify-content: center;  
-    transition-duration: 0.4s;
+  }
+  
+  #title {
+    font-size: large;
   }
 
-  #title {
-    display: flex;
-    justify-content: center;
-    margin-top: 15%;
-    margin-bottom: 6%;
-    color: white;
-    background-color: #82d2b5;
-    font-weight: bolder;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  #email:focus:invalid + span::before {
+    top: -30px;
+    left: 110px;   
+  }
+
+  #user-pwd-1:focus + span::before {
+    width: 320px;
+    top: -50px;
+    left: -105px;
+    content: "Include UPPERCASE, lowercase, numbers/special symbols, and min 8 characters."
   }
 } 
+
+@media (hover:none), (hover:on-demand) {
+  nav a:hover{
+    background: none;
+  }
+}
