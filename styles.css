@@ -202,7 +202,7 @@ a {
 }
 
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 540px) {
 
   .main-container {
     flex-direction: column;
