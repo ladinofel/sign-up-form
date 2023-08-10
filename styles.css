@@ -200,68 +200,6 @@ a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 541px) and (max-width: 1020px) {
-
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  img {
-    display: flex;
-    width: 38vh;
-    height: auto;
-    align-self: center;
-  }
-
-  .right-content {
-    border-radius: 0;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-
-  .right-header {
-    text-align: center;
-    margin-top: 0;
-  }
-  
-  label {
-    margin-left: 0;
-  }
-  input {
-    padding: 0;
-    margin-left:10px;
-    margin-right: 0px;
-    width: 40%;
-    margin-bottom: 0px;
-    background-color: #eef4ed;
-    border: none;
-    border-radius: 5px;
-    height: 22px;
-    }
-
-  #myForm {
-    margin-left: -30px;
-  }
-
-  .submit {
-    display: flex;
-    justify-content:center;
-  }
-  
-  button {
-    margin: 30px 0 0 30px;
-    font-size: large;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 1%;
-    width: 35%;
-    justify-content: center;  
-    transition-duration: 0.4s;
-  }
-} 
-
 
 @media screen and (max-width: 380px) {
 
@@ -363,6 +301,106 @@ a {
   }
 } 
 
+@media screen and (min-width: 541px) and (max-width: 1020px){
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img {
+    display: flex;
+    align-self: center;
+  }
+
+  img {
+    width: 38vh;
+    height: auto;
+    margin: 0;
+  }
+
+  .right-content {
+    border-radius: 0;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .right-header {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  label {
+    margin-left: 0;
+  }
+
+  input {
+    align-self: center;
+    padding: 0;
+    margin-left:0px;
+    margin-right: 0px;
+    width: 130%;
+    font-size: 17px;
+  }
+
+  #myForm {
+    margin-left: 0px;
+  }
+
+  .submit {
+    display: flex;
+    justify-content:center;
+  }
+  
+  button {
+    width: 55%;
+    margin:0;
+  }
+  
+  #title {
+    font-size: large;
+  }
+
+  #email + span::before {
+    padding: 1px;
+  }
+
+  #email:focus:invalid + span::before {
+    top: -37px;
+    left: 230px; 
+    height: 18px; 
+    width: 190px; 
+  }
+
+  #user-pwd-1:focus + span::before {
+    width: 320px;
+    top: -60px;
+    left: 225px;
+    width: 250px;
+    content: "Include UPPERCASE, lowercase, numbers/symbols, and min 8 characters."
+  }
+
+  .first-name,
+  .last-name,
+  .email,
+  .phone-number,
+  .pwd_1,
+  .pwd_2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  #confirmPassword-feedback {
+    margin-top: 53px; 
+    margin-left: 5px;
+  }
+
+
+
+}
 @media (hover: hover) {
   button:hover {
       background-color: #82d2b5;
