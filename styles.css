@@ -326,14 +326,16 @@ a {
 
   #email:focus:invalid + span::before {
     top: -13px;
-    left: 20px; 
-    height: 14px;  
+    left: 0px; 
+    height: 14px; 
+    width: 190px; 
   }
 
   #user-pwd-1:focus + span::before {
     width: 320px;
     top: -10px;
-    left: -66px;
+    left: -40px;
+    width: 280px;
     content: "Include UPPERCASE, lowercase, numbers/special symbols, and min 8 characters."
   }
 
