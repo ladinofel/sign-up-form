@@ -380,7 +380,7 @@ a {
   #user-pwd-1:focus + span::before {
     width: 320px;
     top: -60px;
-    left: 240px;
+    left: 270px;
     width: 170px;
     content: "Include UPPERCASE, lowercase, numbers/symbols, and min 8 characters."
   }
