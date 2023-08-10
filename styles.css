@@ -90,6 +90,7 @@ button:active {
 
 #form-restrictions {
   font-size: small;
+  margin-left: 30px;
 }
 
 input {
@@ -299,6 +300,10 @@ a {
     margin-top: 53px; 
     margin-left: 10px;
   }
+
+  #form-restrictions {
+    margin-left: 0px;
+  }
 } 
 
 @media screen and (min-width: 541px) and (max-width: 1020px){
@@ -398,9 +403,11 @@ a {
     margin-left: 5px;
   }
 
-
-
+  #form-restrictions {
+    margin-left: 0px;
+  }
 }
+
 @media (hover: hover) {
   button:hover {
       background-color: #82d2b5;
