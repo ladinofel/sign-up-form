@@ -323,18 +323,23 @@ a {
     font-size: large;
   }
 
+  #email + span::before {
+    padding: 1px;
+      
+  }
+
   #email:focus:invalid + span::before {
     top: -13px;
-    left: 17px; 
-    height: 14px; 
+    left: 8px; 
+    height: 18px; 
     width: 190px; 
   }
 
   #user-pwd-1:focus + span::before {
     width: 320px;
     top: -10px;
-    left: -23px;
-    width: 300px;
+    left: -30px;
+    width: 320px;
     content: "Include UPPERCASE, lowercase, numbers/symbols, and min 8 characters."
   }
 
