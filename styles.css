@@ -89,7 +89,6 @@ button:active {
 }
 
 #form-restrictions {
-  margin-left: 30px;
   font-size: small;
 }
 
@@ -326,7 +325,7 @@ a {
 
   #email:focus:invalid + span::before {
     top: -13px;
-    left: 20px; 
+    left: 17px; 
     height: 14px; 
     width: 190px; 
   }
@@ -334,9 +333,9 @@ a {
   #user-pwd-1:focus + span::before {
     width: 320px;
     top: -10px;
-    left: -20px;
-    width: 280px;
-    content: "Include UPPERCASE, lowercase, numbers/special symbols, and min 8 characters."
+    left: -23px;
+    width: 300px;
+    content: "Include UPPERCASE, lowercase, numbers/symbols, and min 8 characters."
   }
 
   .first-name,
@@ -351,6 +350,11 @@ a {
     margin:0;
     padding: 0;
     margin-bottom: 10px;
+  }
+
+  #confirmPassword-feedback {
+    margin-top: 53px; 
+    margin-left: 20px;
   }
 } 
 
