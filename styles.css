@@ -325,14 +325,15 @@ a {
   }
 
   #email:focus:invalid + span::before {
-    top: -30px;
-    left: 110px;   
+    top: -13px;
+    left: 20px; 
+    height: 14px;  
   }
 
   #user-pwd-1:focus + span::before {
     width: 320px;
-    top: -50px;
-    left: -105px;
+    top: -10px;
+    left: -66px;
     content: "Include UPPERCASE, lowercase, numbers/special symbols, and min 8 characters."
   }
 
